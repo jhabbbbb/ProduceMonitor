@@ -212,7 +212,7 @@ local function updateUI()
 			end
 			-- icon
 			local spriteButton = flow.add{type = 'sprite-button', name = item['name']..'_image', sprite = sprite}
-			spriteButton.style.color = {r = 0, g = 0, b = 0, a = 1}
+			-- spriteButton.style.color = {r = 0, g = 0, b = 0, a = 1}
 			-- 1 progressbar if production <= target; 2 progressbar if production > target
 			local progressbarFlow = flow.add{type = 'flow', name = item['name']..'_progressbarflow', direction = 'vertical'}
 			local progressbarValue = item.production / item.target
